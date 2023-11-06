@@ -69,6 +69,44 @@ footer {   font-size: .60em;
 		 font-style: italic;
 		 text-align: center; 
 }
+
+
+table {
+	width: 60%;
+	border: 1px solid #3F2860;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td, th {
+	padding: 5px;
+	border: 1px solid #3F2860;
+}
+
+tr:nth-of-type(even) {
+	background-color: #DBE8E9;
+}
+
+caption {
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+form {
+	display: flex;
+	padding-left: 1em;
+	width: 80%;
+	flex-direction: column;
+}
+
+input, textarea {
+	margin-bottom: 0.5em;
+}
+
+
 @media (min-width: 600px) { 
 		nav ul { flex-flow: row nowrap;
 		          justify-content: flex-end; }
@@ -81,6 +119,18 @@ footer {   font-size: .60em;
 		        flex-direction: row; }
 		#mobile { display: none; }
 		#desktop { display: inline; }
+		form { display: grid;
+				grid-template-rows: auto;
+				grid-template-columns: 12em 1fr;
+				grid-gap: 1em; gap: 1em;
+				width: 60%;
+				}
+		input[type="submit"] { grid-column: 2 / 3;
+								width: 9em; 
+		}
+		label { 
+			text-align: right;
+		}
 }
 @media (min-width: 1024px) { 
 		header { font-size: 120%; }
