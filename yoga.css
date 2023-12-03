@@ -111,13 +111,25 @@ audio {
 	margin: 1em;
 }
 
+#storehero {
+	background-image: url(store.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	display: none; 
+}
+
+section form {
+	padding-bottom: 1em;
+}
+
 @media (min-width: 600px) { 
 		nav ul { flex-flow: row nowrap;
 		          justify-content: flex-end; }
 		nav li { width: 7em; }
 		section { padding-left: 2em;
 		          padding-right: 2em; }
-		#mathero, #loungehero { display: block; 
+		#mathero, #loungehero, #storehero { display: block; 
 		                        padding-bottom: 1em; }
 		#flow { display: flex;
 		        flex-direction: row; }
